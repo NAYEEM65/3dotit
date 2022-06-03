@@ -3,6 +3,10 @@ const classes = {
         marginTop: 1,
         marginBottom: 1,
     },
+    login: {
+        margin: '0 auto',
+        textAlign: 'center',
+    },
     smallText: {
         fontSize: '15px',
     },

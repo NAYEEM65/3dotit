@@ -29,7 +29,9 @@ export default function Home() {
     return (
         <Layout>
             {loading ? (
-                <ThreeDots />
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <ThreeDots />
+                </div>
             ) : error ? (
                 <Alert error={error} />
             ) : (

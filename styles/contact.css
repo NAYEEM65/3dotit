@@ -1,0 +1,102 @@
+.app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__footer-form {
+    width: 60%;
+    flex-direction: column;
+}
+.form-name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+
+    font-family: var(--font-base);
+    color: var(--secondary-color);
+    outline: none;
+    margin-top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+}
+
+#custom-target {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+.form-name input:first-child {
+    margin-right: 10px;
+}
+.formInput {
+    margin-right: 10px !important;
+}
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+svg {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.form-input {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-danger {
+    color: red;
+}
+fieldset {
+    width: 100%;
+    padding: 10px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--gray-color);
+    border-radius: 10px;
+}
+legend {
+    font-size: 40px;
+    display: block;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}

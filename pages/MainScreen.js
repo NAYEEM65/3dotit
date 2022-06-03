@@ -3,6 +3,7 @@ import { client, urlFor } from '../utils/client';
 import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Button } from '@mui/material';
 
 const MainScreen = ({ banners }) => {
     return (
@@ -12,6 +13,7 @@ const MainScreen = ({ banners }) => {
                     <h2>{item.name}</h2>
                     <h4>{item.subHeading}</h4>
                     <img width={1200} src={urlFor(item.image)} alt="3dotit" />
+                    <Button variant="contained">{item.btnText}</Button>
                 </div>
             ))}
         </Carousel>

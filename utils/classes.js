@@ -7,6 +7,10 @@ const classes = {
         margin: '0 auto',
         textAlign: 'center',
     },
+    loginCard: {
+        backgroundColor: 'green',
+    },
+
     smallText: {
         fontSize: '15px',
     },
